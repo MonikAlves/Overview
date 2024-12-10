@@ -1,57 +1,45 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TradingView Widget 2</title>
+  <style>
+    /* Define que o body ocupa toda a página */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden; /* Remove o scroll */
+    }
+
+    /* Define o container do widget para ocupar todo o espaço */
+    .tradingview-widget-container {
+      width: 100%;
+      height: 100%;
+      display: flex; /* Garante o preenchimento correto */
+    }
+  </style>
 </head>
 <body>
- <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-  {
-  "width": "100%",
-  "height": "100%",
-  "symbolsGroups": [
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
     {
-      "name": "Ações",
-      "originalName": "Indices",
-      "symbols": [
-        {
-          "name": "BMFBOVESPA:PETR4",
-          "displayName": "PETR4"
-        },
-        {
-          "name": "BMFBOVESPA:GGBR4",
-          "displayName": "GGBR4"
-        }
-      ]
-    },
-    {
-      "name": "FIIS",
-      "symbols": [
-        {
-          "name": "BMFBOVESPA:ALZR11",
-          "displayName": "ALZR11"
-        },
-        {
-          "name": "BMFBOVESPA:XPML11",
-          "displayName": "XPML11"
-        }
-      ]
-    }
-  ],
-  "showSymbolLogo": true,
-  "isTransparent": true,
-  "colorTheme": "dark",
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-</body>
-</html>
+    "width": "100%",
+    "height": "100%",
+    "symbolsGroups": [
+      {
+        "name": "Ações",
+        "originalName": "Indices",
+        "symbols": [
+          {
+            "name": "BMFBOVESPA:PETR4",
+            "displayName": "PETR4"
+          },
+          {
+            "name": "BMFBOVESPA:GGBR4",
+            "displayName": "GGBR4"
+         
